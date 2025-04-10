@@ -1,26 +1,79 @@
 
+# 📘 Ejercicios de Expresiones Regulares
 
-## Ejercicio 2: Diseño de Expresiones Regulares
+A continuación, una serie de ejercicios prácticos para reforzar el uso de expresiones regulares en validación de formatos comunes.
+Usá herramientas como [https://regex101.com/](https://regex101.com/)
 
-**Objetivo:** Aprender a definir patrones formales para identificar diferentes tipos de tokens mediante expresiones regulares.
+##  Fechas (en distintos formatos)
 
-### Conceptos clave:
-- **Caracteres literales:** Coinciden consigo mismos (a, b, 1, 2...)
-- **Clases de caracteres:** `[a-z]`, `[A-Z]`, `[0-9]`
-- **Cuantificadores:** `*`, `+`, `?`, `{n}`, `{n,m}`
-- **Alternativas:** `|` (OR lógico)
-- **Agrupación:** `( )`
-- **Caracteres especiales:** `\d`, `\w`, `\s`
+1. **Formato DD/MM/AAAA**  
 
-### Ejemplos de expresiones regulares:
-- **Identificadores en Java:** `[a-zA-Z_][a-zA-Z0-9_]*`
-- **Números enteros:** `[0-9]+`
-- **Punto flotante:** `[0-9]+\.[0-9]+`
-- **Notación científica:** `[0-9]+(\.[0-9]+)?[eE][+-]?[0-9]+`
-- **Cadenas:** `"[^"]*"` o `"(\\.|[^"\\])*"`
-- **Comentarios:** `//.*` y `/\*[\s\S]*?\*/`
+2. **Formato AAAA-MM-DD (ISO)**  
 
-### Actividad práctica:
-- Probar las expresiones en https://regex101.com/
-- Validar casos positivos y negativos
-- Refinar expresiones
+3. **Fechas con meses en texto (opcional)**  
+
+##  Correos Electrónicos
+
+
+**Ejemplos válidos:**
+- persona@mail.com
+- usuario.123@empresa.org
+
+**Inválidos:**
+- correo@com
+- @sinusuario.com
+
+##  CUIL/CUIT (Argentina)
+
+**Ejemplo válido:** 20-12345678-3
+
+##  DNI (Argentina)
+
+**Válidos:**
+- 12345678
+- 2345678
+
+##  Números de teléfono
+
+**Formato internacional con +**  
+
+**Formato nacional con 0 y 15**  
+
+##  Códigos postales (Argentina)
+
+**Ejemplos válidos:**
+- 1406
+- 1406ABC
+
+##  Comentarios (como en lenguajes de programación)
+
+**Comentario de una línea (estilo C/Java)**  
+**Ejemplos válidos:**
+- //Es un comentario
+
+**Comentario de bloque (estilo C/Java)**  
+- /* */
+- 
+
+## Contraseña segura (mínimo 8 caracteres, una mayúscula, una minúscula, un número y un símbolo)**  
+
+## Nombres y Apellidos (letras, espacios y tildes)**  
+
+
+## URLs
+**Ejemplos válidos:**
+- https://www.google.com/
+- https://github.com/FranciscoAmeri
+
+## Direcciones IP
+**Ejemplos válidos:**
+- 192.168.0.1
+
+## Matrículas de autos
+**Ejemplos válidos:**
+- AAA 123
+- AA 44A BB
+
+## Números de tarjeta de crédito
+**Ejemplos válidos:**
+- 1111 2222 3333 4444
