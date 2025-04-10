@@ -1,0 +1,62 @@
+# Ejercicios de Análisis Léxico para Estudiantes
+
+## Ejercicio 1: Identificación de Tokens
+
+**Objetivo:** Que los estudiantes aprendan a reconocer y clasificar los diferentes componentes léxicos (tokens) en un código fuente.
+
+**Explicación:** El análisis léxico es el primer paso en la compilación, donde el código fuente se descompone en unidades básicas llamadas "tokens". Cada token representa un elemento con significado en el lenguaje de programación.
+
+### Instrucciones para los estudiantes:
+- Analiza el fragmento de código proporcionado línea por línea
+- Identifica cada token individual (la unidad más pequeña con significado)
+- Clasifica cada token según su tipo
+- Registra la posición exacta (línea y columna) donde aparece cada token
+
+**Tipos de tokens comunes:**
+- Palabras clave: Reservadas por el lenguaje (`if`, `while`, `int`, etc.)
+- Identificadores: Nombres de variables o funciones
+- Literales: Valores constantes (números, cadenas de texto)
+- Operadores: Símbolos que realizan operaciones (`+`, `-`, `*`, `/`)
+- Separadores: Delimitadores como paréntesis, llaves, punto y coma
+
+**Ejemplo resuelto:**
+
+```java
+int suma = 10 + 5;
+if (suma > 10) {
+    System.out.println("El resultado es mayor que 10");
+}
+```
+
+**Tabla de tokens resultante:**
+
+| Token                       | Tipo              | Línea | Columna |
+|----------------------------|-------------------|-------|---------|
+| int                        | Palabra clave     | 1     | 1       |
+| suma                       | Identificador     | 1     | 5       |
+| =                          | Operador          | 1     | 10      |
+| 10                         | Literal (entero)  | 1     | 12      |
+| +                          | Operador          | 1     | 15      |
+| 5                          | Literal (entero)  | 1     | 17      |
+| ;                          | Separador         | 1     | 18      |
+| if                         | Palabra clave     | 2     | 1       |
+| (                          | Separador         | 2     | 4       |
+| suma                       | Identificador     | 2     | 5       |
+| >                          | Operador          | 2     | 10      |
+| 10                         | Literal (entero)  | 2     | 12      |
+| )                          | Separador         | 2     | 14      |
+| {                          | Separador         | 2     | 16      |
+| System                     | Identificador     | 3     | 5       |
+| .                          | Separador         | 3     | 11      |
+| out                        | Identificador     | 3     | 12      |
+| .                          | Separador         | 3     | 15      |
+| println                    | Identificador     | 3     | 16      |
+| (                          | Separador         | 3     | 23      |
+| "El resultado es mayor..." | Literal (string)  | 3     | 24      |
+| )                          | Separador         | 3     | 54      |
+| ;                          | Separador         | 3     | 55      |
+| }                          | Separador         | 4     | 1       |
+
+**Material complementario sugerido:**
+- Fragmentos en otros lenguajes (Python, C++)
+- Casos con comentarios, strings con espacios, operadores compuestos
