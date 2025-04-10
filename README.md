@@ -1,10 +1,5 @@
-# Ejercicios de Análisis Léxico para Estudiantes
-
 ## Ejercicio 1: Identificación de Tokens
 
-**Objetivo:** Que los estudiantes aprendan a reconocer y clasificar los diferentes componentes léxicos (tokens) en un código fuente.
-
-**Explicación:** El análisis léxico es el primer paso en la compilación, donde el código fuente se descompone en unidades básicas llamadas "tokens". Cada token representa un elemento con significado en el lenguaje de programación.
 
 ### Instrucciones para los estudiantes:
 - Analiza el fragmento de código proporcionado línea por línea
